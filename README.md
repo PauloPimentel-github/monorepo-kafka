@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src="https://github.com/PauloPimentel-github/monorepo-kafka/blob/main/.github/template-tecnologias.png" width="100%" height="600px">
+  <img alt="dev.finances" src="https://github.com/PauloPimentel-github/monorepo-kafka/blob/main/.github/template-tecnologias.png" width="100%" height="250px">
 </p>
 
 ## 🚀 Tecnologias
@@ -22,6 +22,7 @@
 Esse projeto foi desenvolvido no curso de Apache Kafka, utilizando como ferramentas e tecnologias:
 
 - Spring
+- Zookeeper
 - Apache Kafka
 - Kafdrop
 - Docker + Docker Hub
