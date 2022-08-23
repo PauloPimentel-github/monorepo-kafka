@@ -3,7 +3,6 @@ package com.phpimentel.kafkaconsumer.listeners;
 import com.phpimentel.kafkaconsumer.custom.ConsumerCustomListener;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.annotation.TopicPartition;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -20,7 +19,7 @@ public class ConsumerListener {
         log.info("LOG ::: Receive message {}", message);
     }
 
-    @ConsumerCustomListener(groupId = "group-2")
+    @KafkaListener(groupId = "group-2", topics = "topic", containerFactory = "validMessageContainerFactory")
     public void history(String message) {
         log.info("HISTORY ::: Receive message {}", message);
     }
